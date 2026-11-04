@@ -1015,7 +1015,7 @@ const App = () => {
     );
   }
 
-  // Active Quiz View
+
   return (
     <div className="min-h-screen bg-slate-900 py-8 px-4 flex flex-col items-center justify-center">
       <div className="w-full max-w-3xl bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
@@ -1038,13 +1038,13 @@ const App = () => {
                 WS
               </div>
               <div className="text-xs">
-                <p className="font-semibold text-slate-200">Waris Singh</p>
+                <p className="font-semibold text-slate-200">Harsimran singh</p>
                 <p className="text-slate-400">Developer</p>
               </div>
             </div>
           </div>
 
-          {/* Progress Tracker Bar */}
+       
           <div className="mt-6">
             <div className="flex justify-between text-xs font-semibold text-slate-300 mb-2">
               <span>Question {currentQuestion + 1} of {Questions.length}</span>
@@ -1059,7 +1059,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* Question Area */}
+    
         <div className="p-6 sm:p-8">
           {Questions[currentQuestion].image && (
             <div className="flex justify-center mb-6">
@@ -1077,7 +1077,7 @@ const App = () => {
             {Questions[currentQuestion].question}
           </h2>
 
-          {/* Answer Options */}
+        
           <div className="grid grid-cols-1 gap-3 mt-6">
             {Questions[currentQuestion].options.map((item, index) => {
               const isCorrectAnswer = item === Questions[currentQuestion].answer;
@@ -1137,7 +1137,7 @@ const App = () => {
             })}
           </div>
 
-          {/* Controls Bar */}
+         
           <div className="flex items-center gap-3 mt-8 pt-6 border-t border-slate-100">
             <button
               disabled={currentQuestion === 0}
@@ -1181,7 +1181,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* Live Bottom Stat Counter */}
+      
         <div className="bg-slate-50 px-6 py-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
           <div>
             Current Accuracy: <span className="text-slate-800 font-bold">{Math.round((score / (currentQuestion + (answered ? 1 : 0) || 1)) * 100)}%</span>
