@@ -1033,12 +1033,13 @@ const App = () => {
             </div>
 
             <div className="flex items-center gap-3 bg-slate-800/80 border border-slate-700 px-3.5 py-2 rounded-xl self-start sm:self-auto">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 text-white font-bold text-sm flex items-center justify-center">
-                WS
+              <div className="w-10 h-4 rounded-lg bg-blue-600 text-white font-bold text-sm flex items-center justify-center">
+                <span className="text-[10px]" >Boparai</span>
               </div>
               <div className="text-xs">
                 <p className="font-semibold text-slate-200">Harsimran singh</p>
                 <span>+1 905-358-4300</span>
+                
                 <p className="text-slate-400">Developer</p>
               </div>
             </div>
